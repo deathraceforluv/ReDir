@@ -5,7 +5,7 @@
 #define EPIC_GAMES_URL @"ol.epicgames.com"
 
 // Custom URL Protocol
-@interface CustomURLProtocol : NSURLProtocol
+@interface CustomURLProtocol : NSURLProtocol <NSURLSessionDelegate> // Conform to NSURLSessionDelegate
 @end
 
 @implementation CustomURLProtocol
